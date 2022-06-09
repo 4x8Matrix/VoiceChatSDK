@@ -16,7 +16,6 @@ This SDK introduces a handle over VoiceChat that the developers can manipulate, 
 
 This event will be fired when a player is muted from the server, this even will **not** fire when a client decides to mute someone. 
 
----
 ##### VoiceChatSDK.onPlayerMuted
 ```
 <RBXScriptSignal> VoiceChatSDK.onPlayerUnmuted
@@ -24,7 +23,6 @@ This event will be fired when a player is muted from the server, this even will 
 
 This event will be fired when a player is unmuted from the server, this even will **not** fire when a client decides to unmute someone. 
 
----
 ##### VoiceChatSDK.onVoiceChatClientsUpdated
 ```
 <RBXScriptSignal> VoiceChatSDK.onVoiceChatClientsUpdated
@@ -41,7 +39,6 @@ VoiceChatSDK.mutePlayerAsync(player<Player: Instance>)
 
 This will mute the selected player for all players (if they have voice chat.)
 
----
 ##### VoiceChatSDK.unmutePlayerAsync
 ```
 VoiceChatSDK.unmutePlayerAsync(player<Player: Instance>)
@@ -49,7 +46,6 @@ VoiceChatSDK.unmutePlayerAsync(player<Player: Instance>)
 
 This will unmute the selected player for all players (if they have voice chat.)
 
----
 ##### VoiceChatSDK.getActiveVoiceChatPlayers
 ```
 VoiceChatSDK.getActiveVoiceChatPlayers() -> table: { [number]: [player<Player: Instance>] 
@@ -57,8 +53,7 @@ VoiceChatSDK.getActiveVoiceChatPlayers() -> table: { [number]: [player<Player: I
 
 Will return an array of all participants currently using VoiceChat
 
----
-##### VoiceChatSDK.isVoiceEnabledForPlayer
+#### VoiceChatSDK.isVoiceEnabledForPlayer
 ```
 VoiceChatSDK.isVoiceEnabledForPlayer(player<Player: Instance>) -> boolean
 ```
