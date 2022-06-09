@@ -1,10 +1,12 @@
 # VoiceChatSDK
 ## About
-VoiceChatSDK brings new features to the roblox VoiceChat experience, I built this module because as of right now the only control developers actually have over VoiceChat is validation of voice chat. 
-This SDK introduces a handle over VoiceChat that the developers can manipulate, there is two sides to this SDK; Server & Client which both have accesss to do different things and influence VoiceChat in different ways.
+VoiceChatSDK brings new features to the roblox VoiceChat experience, 
+I built this module because as of right now the only control developers actually have over VoiceChat is validation of voice chat. 
+This SDK introduces a handle over VoiceChat that the developers can manipulate, there is two sides to this SDK; 
+Server & Client which both have accesss to do different things and influence VoiceChat in different ways.
 
 ## Installation
-<...>
+Head on over to [Releases](https://github.com/4x8Matrix/VoiceChatSDK/releases/) and follow the instructions on the release page. 
 
 ## API Documentation
 ### Server API
