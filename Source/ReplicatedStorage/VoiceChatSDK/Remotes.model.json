@@ -1,0 +1,31 @@
+{
+	"ClassName": "Folder",
+	"Children": [
+		{
+			"Name": "ReplicateMuteRequest",
+			"ClassName": "RemoteEvent"
+		},
+		{
+			"Name": "ReplicateUnmuteRequest",
+			"ClassName": "RemoteEvent"
+		},
+		
+		{
+			"Name": "SetVoiceChatClients",
+			"ClassName": "RemoteEvent"
+		},
+		{
+			"Name": "SetVoiceChatState",
+			"ClassName": "RemoteEvent"
+		},
+
+		{
+			"Name": "SyncMutedPlayers",
+			"ClassName": "RemoteFunction"
+		},
+		{
+			"Name": "SyncVoiceChatClients",
+			"ClassName": "RemoteFunction"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+  	"name": "VoiceChatSDK",
+  	"tree": {
+		"$className": "DataModel",
+
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+		
+	 	 	"VoiceChatSDK": {
+				"$path": "Source"
+	  		}
+		}
+  	}
+}
