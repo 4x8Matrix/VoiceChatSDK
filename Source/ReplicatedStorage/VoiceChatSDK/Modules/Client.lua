@@ -15,7 +15,6 @@ local EMITTER_PART_VOID = CFrame.new(
 	0
 )
 
-
 -- // Variables
 local VoiceChatClient = {}
 local VoiceChatChannelCFrames = {
@@ -79,7 +78,8 @@ end
 
 function VoiceChatClient:_updateCharacterModel()
 	self.componentsModel = Instance.new("Model")
-	
+	self.componentsModel.PrimaryPart = self.character:WaitForChild("HumanoidRootPart")
+
 	for _, object in ipairs(self.character:GetChildren()) do
 		if object.Name == EMITTER_PART_NAME then
 			continue
@@ -111,6 +111,8 @@ function VoiceChatClient:_onCharacterAdded(character)
 	
 	self:_createEmitter()
 	self:_updateCharacterModel()
+
+	self.SDK._updateChatBubbleSettings(self.player, self.character)
 end
 
 function VoiceChatClient.new(voiceChatSDK, player)

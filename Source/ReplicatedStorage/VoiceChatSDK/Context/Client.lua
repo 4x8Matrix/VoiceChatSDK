@@ -91,6 +91,19 @@ function VoiceChatSDK.getActiveVoiceChatPlayers()
 end
 
 -- // Private Functions
+function VoiceChatSDK._updateChatBubbleSettings(player, character)
+	VoiceChatSDK._chatBubbleCharacters[player] = character
+	VoiceChatSDK._chatBubbleSettings = {
+		UserSpecificSettings = {}
+	}
+
+	for player in pairs(VoiceChatSDK._chatBubbleCharacters) do
+		VoiceChatSDK._chatBubbleSettings[player] = {
+			AdorneeName = "Components"
+		}
+	end
+end
+
 function VoiceChatSDK._onPlayerRemoving(player)
 	while not VoiceChatSDK._clients[player] do
 		task.wait()
@@ -125,6 +138,7 @@ function VoiceChatSDK.init()
 	VoiceChatSDK._janitor = Janitor.new()
 	VoiceChatSDK._clients = {}
 	VoiceChatSDK._channel = "Center"
+	VoiceChatSDK._chatBubbleCharacters = {}
 
 	--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
